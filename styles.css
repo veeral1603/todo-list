@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 300,
+    'GRAD' 0,
+    'opsz' 24
+}
+
+
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    width: 100vw;
+    background: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    font-family: 'Poppins' , sans-serif;
+    height: 100vh;
+}
+
+
+.checked
+{
+    text-decoration: line-through;
+
+}
+
+.hidden
+{
+    display: none !important;
+}
+
+.app 
+{
+    
+    display: flex;
+    padding: 4rem;
+    justify-content: center;
+}
+
+.todo-wrapper
+{
+    background-color: white;
+    width: 540px;
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+
+    display: flex;
+    flex-direction: column;
+    
+
+}
+
+.heading-container
+{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.heading
+{
+    font-size: 30px;
+    font-weight: 500;
+    color: #333;
+    
+}
+
+.todo-list-icon
+{
+    width: 40px;
+}
+
+.input-container
+{
+    background-color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: .7rem;
+    border-radius: 50px;
+
+    margin-top: 20px;
+}
+
+.input-container input
+{
+    width: 100%;
+    padding: 1.2rem 1rem;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 16px;
+}
+.input-container input::placeholder
+{
+    color: rgb(151, 151, 151);
+}
+
+.input-container button
+{
+    border: none;
+    padding: 1.2rem 2rem;
+    border-radius: 50px;
+    cursor: pointer;
+    background-color: rgb(184, 135, 248);
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.input-container button:focus
+{
+    outline: none;
+    border: none;
+}
+
+.item-count-container
+{
+    margin-top: 20px;
+}
+
+.item-count-container p
+{
+    color: rgb(132, 39, 255)
+}
+
+.todo-list
+{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.todo-row
+{
+    display: flex;   
+
+    padding: 14px 10px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    overflow: auto;
+    
+}
+
+.todo-row-task
+{
+    font-weight: 500;
+}
+
+.todo-row span
+{
+    cursor: pointer;
+}
+.radio
+{
+    margin-right: 10px;
+    color: rgb(136, 49, 250)
+}
+.delete
+{
+    margin-left: auto;
+    color: rgb(151, 151, 151);
+}
+
+footer
+{
+    
+    padding: 1rem;
+    text-align: center;
+}
+footer p
+{
+    font-weight: 500;
+    color: #333;
+}
+footer p a
+{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 760px)
+{
+    body
+    {
+        background-color: #181818;
+        background-image: none;
+    }
+       
+    .app
+    {
+        
+        padding: 3rem 1rem;
+    }
+    .todo-wrapper
+    {
+        padding: 1rem;
+        width: 400px;
+    }
+    .heading-container
+    {
+        justify-content: center;
+    }
+
+    .input-container button
+    {
+        padding: 1.2rem 1rem;
+    }
+
+    .item-count-text
+    {
+        text-align: center;
+    }
+    
+    footer p
+    {
+        color: white;
+        font-size: 12px;
+    }
+    footer p a 
+    {
+        color: rgb(177, 9, 255);
+    }
+}
